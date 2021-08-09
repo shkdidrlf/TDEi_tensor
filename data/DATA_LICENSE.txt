@@ -1,0 +1,5 @@
+This dataset is under a CC-BY license, clarified the authors of the work (https://creativecommons.org/licenses/by/3.0/).
+Article url: https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0113-y
+
+Dataset source url
+https://figshare.com/articles/dataset/Melting_Point_and_Pyrolysis_Point_Data_for_Tens_of_Thousands_of_Chemicals/2007426
