@@ -8,7 +8,7 @@ Codes for calculation of topological distance based electron interaction (TDEi) 
 4) Numpy (1.15.4)
 
 *Dependencies
-Tensorflow GPU 2.2.0 in Anaconda environment.
+Tensorflow 2 GPU version in Anaconda environment (tensorflow 2.2.0 was used in development).
 
 How to use
 1) edit 'sbatch_tdei_activity_calcultion.sh' file to give specifications for calculation.
