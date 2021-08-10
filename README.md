@@ -7,7 +7,7 @@ Codes for calculation of topological distance based electron interaction (TDEi) 
 3) Pandas (0.25.0)
 4) Numpy (1.15.4)
 
-*Dependencies
+*Dependencies:
 Tensorflow 2 GPU version in Anaconda environment (tensorflow 2.2.0 was used in development).
 
 How to use
