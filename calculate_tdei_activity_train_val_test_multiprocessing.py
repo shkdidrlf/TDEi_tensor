@@ -72,6 +72,7 @@ def calculate_tdim_tensor (df):
     for index, row in df.iterrows():
         #print ('Started:',index)
         mol = Chem.MolFromSmiles(row[smi])
+        
         #Hydrogen must be added to consider intrinsic hydrgeon in TDEi tensor calculation.
         molH = Chem.AddHs(mol)
 
@@ -87,8 +88,11 @@ def calculate_tdim_tensor (df):
                 atom_index = np.where(vector == t)[0]
                 for a in atom_index:
                     atom_symbol = molH.GetAtomWithIdx(int(a)).GetSymbol()
+
+                    #Collect EC vector from atoms at topological distance 't'.
                     ec_atom = ec.loc[ec['atom']==atom_symbol,col_selec].values[0]
                     top_dict[t].append(ec_atom)
+                    
             calculate_topological_tensor(top_dict, atom_tensor, mol_tensor)
             #check_flag += top_dict[0][0][0]**2
         
